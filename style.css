@@ -23,6 +23,25 @@ li{
     list-style: none;
     padding: 20px 23px;
 }
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:active{
+    color: white;
+}
+li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: #111111;
+  }
 section{
     height: 344px;
     margin: 3px 230px;
