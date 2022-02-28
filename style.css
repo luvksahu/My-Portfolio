@@ -7,6 +7,11 @@ body{
     background-color:black ;
     color: white;
 }
+#div_super{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 header::before{
     content: "";
     background: url(https://source.unsplash.com/random/?technology,tech) no-repeat center center/cover;
@@ -97,10 +102,12 @@ nav ul li a:hover:after{
     font-size: 5rem;
     text-shadow: 2px 2px #1d1d24;
     font-family: 'Fira Sans', sans-serif;
-    
+    display: block;
 }
 #description{
     text-align: center;
     font-family: 'Redressed', cursive;
     font-size: 2rem;
+    padding: 0.5rem;
+    background: rgba(2, 47, 65, 0.8);
 }
