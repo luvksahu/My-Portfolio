@@ -7,7 +7,7 @@ body{
     background-color:rgb(13, 13, 14) ;
     color: white;
 }
-#div_super{
+#container_super{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,8 @@ header::before{
 #div_header{
     display: flex;
     flex-direction: row;
-    height: 17vh;
+    height: 18vh;
+    /* flex-grow: 2; */
 }
 nav{
     padding: 20px 10px;
@@ -50,7 +51,7 @@ nav ul li a:link, a:visited, a:active{
 nav ul li a{
     color: #1d1d24;
     position: relative;
-    padding: 5px 5px;
+    padding: 0.2rem 0.2rem;
     text-decoration: none;
 }
 nav ul li a:hover{
@@ -93,10 +94,11 @@ nav ul li a:hover:after{
     height: 80vh;
     margin: 1vh 10vw;
     display: flex;
+    /* flex-shrink: 2; */
     flex-direction: column;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 #heading{
     font-size: 5rem;
@@ -110,8 +112,25 @@ nav ul li a:hover:after{
     padding: 0.5rem;
     background: rgba(2, 47, 65, 0.8);
 }
-#div_about{
+#div_project{
     display: flex;
     flex-direction: column;
-    background:#771717
+    background:rgba(2, 47, 65, 0.8);
+}
+#project_heading{
+    margin: 0.5rem 1rem;
+}
+.projectItems{
+    width: 35vw;
+    height: 75vh;
+    background: #1d1d24;
+    border: 2px solid black;
+    margin: 1rem;
+    text-align: center;
+}
+#project_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
